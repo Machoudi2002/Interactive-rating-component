@@ -1,0 +1,118 @@
+@use 'theme.scss';
+
+$orange-button : hsl(25, 97%, 53%);
+$background: hsl(216, 12%, 8%);
+$heading: white;
+$para-num: hsl(216, 12%, 54%);
+$circle-back: hsl(213, 19%, 18%);
+$num-hover: hsl(217, 12%, 63%);
+
+
+
+
+
+main {
+    padding: 25px;
+    margin: 10vw auto;
+    width: 340px;
+    height: 390px;
+    color: $circle-back;
+    background: rgb(37,45,48);
+    background: linear-gradient(0deg, rgba(37,45,48,1) 0%, rgba(18,20,16,1) 100%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 22px 0px hsl(213, 19%, 18%);
+    
+}
+
+// Rating Section
+
+#before {
+    img {
+        padding: 15px 15px;
+        width: 48px;
+        background-color: $circle-back;
+        border-radius: 50%;
+    }
+
+    .rating-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    
+        
+        span {
+            padding: 15px 0;
+            background-color: $circle-back;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 25px 0;
+            color: $para-num;
+            font-weight: bold;
+
+        }
+        span:hover {
+            color: white;
+            background-color: $num-hover;
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: $orange-button;
+            color: white;
+        } .active:hover {
+            background-color: $orange-button;
+            color: white;
+
+        }
+    
+    
+    }
+    button {
+        width: 100%;
+        padding: 15px;
+        border-radius: 25px;
+        background-color: $orange-button;
+        color: white;
+        border: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 16px;
+
+
+
+    }
+    button:hover {
+        color: $orange-button;
+        background-color: white;
+        cursor: pointer;
+    }
+
+}
+
+// Submit The rating
+
+#after {
+    text-align: center;
+
+    img {
+        width: 200px;
+        padding: 20px 20px 15px;
+    }
+
+    div {
+        padding: 8px 0px;
+        background-color: $circle-back;
+        color: $orange-button;
+        margin: 20px 45px;
+        border-radius: 20px;
+    }
+
+
+}
